@@ -1,4 +1,3 @@
-
 /* Basic Reset */
 * {
     margin: 0;
@@ -12,8 +11,8 @@
     background-color: #f0f0f0;
   }
   
-/* Navigation */
-nav {
+  /* Navigation */
+  nav {
     background-color: #333;
     color: white;
     padding: 1rem;
@@ -21,10 +20,18 @@ nav {
     justify-content: space-between;
     align-items: center;
   }
-
-.name {
+  
+  .name {
     font-size: 1.5rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
   }
   
   .links a {
@@ -32,7 +39,267 @@ nav {
     text-decoration: none;
     margin-left: 1rem;
   }
-
+  
   .links a:hover {
     text-decoration: underline;
+  }
+  
+  /* Sections */
+  section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* Make 'Welcome to My Portfolio' Bigger */
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  /* About Section */
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 1rem;
+  }
+  
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+  }
+  
+  .welcome-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .welcome-btn {
+    padding: 0.8rem 2rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .welcome-btn:hover {
+    background-color: #444;
+  }
+  
+  /* Skills Section */
+  .skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  /* Make Skill Names into Buttons */
+  .skill-box {
+    background-color: #444;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .skill-box:hover {
+    background-color: #666;
+    transform: scale(1.05);
+  }
+  
+  .skill-logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* About Me Section */
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .get-to-know, .skills-section {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .get-to-know {
+    text-align: left;
+    padding: 1rem;
+  }
+  
+  .skills-section {
+    padding: 1rem;
+  }
+  
+  .skills-section h3 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Arrange Projects in Rows */
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .project-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+  }
+  
+  .project-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Ensure 'Message' Box Can Only Be Resized Vertically */
+  textarea {
+    max-height: 150px;
+    overflow-y: auto;
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  .bold-hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .bold-hover:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skill-box {
+      width: 100%;
+    }
+  }
+  
+  /* Contact Section */
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+  }
+  
+  .contact-form {
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  /* Social Links */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .social-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s;
+  }
+  
+  .social-box:hover {
+    transform: translateY(-3px);
+  }
+  
+  .social-logo {
+    width: 24px;
+    height: 24px;
   }
