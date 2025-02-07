@@ -5,6 +5,11 @@
     box-sizing: border-box;
   }
   
+  .profile-pic {
+    width: 250px;  /* Adjusted size */
+    height: 250px; /* Adjusted size */
+}
+
   body {
     font-family: 'Open Sans', sans-serif; /* Added a more modern font */
     line-height: 1.6;
@@ -12,7 +17,8 @@
     color: #333; /* Darker text */
   }
   
-  /* Navigation */
+  
+  /* Navigation -> Yzza Esquivel*/
   nav {
     background-color: #2c3e50; /* Darker blue */
     color: white;
@@ -108,13 +114,14 @@
   .about-text {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-  }
+    align-items: flex-start; /* Aligns text and buttons to the left */
+    margin-top: -20px;
+}
   
   .profile-pic {
     border-radius: 50%;
-    width: 200px; /* Increased size */
-    height: 200px; /* Increased size */
+    width: 500px; /* Increased size */
+    height: 500px; /* Increased size */
   }
   
   .welcome-buttons {
@@ -236,6 +243,26 @@
     color: #222;
   }
   
+  /* Adjust button size for tech stack buttons */
+.tech-btn {
+    font-size: 0.9rem; /* Make text smaller */
+    padding: 6px 12px; /* Reduce padding */
+  }
+  
+  .small-btn {
+    font-size: 0.8rem; /* Smaller than other buttons */
+    margin-top: 5px;
+  }
+  
+  /* Dark blue background for Projects section */
+  #projects {
+    background-color: #022c48;
+    color: rgb(255, 255, 255);
+  }
+  /* To make Project tile white */
+  #projects h2 {
+    color: white;
+  }
   
   /* Arrange Projects in Rows */
   .projects-container {
@@ -266,7 +293,7 @@
   }
   
   .project-image {
-    width: 300px; /* Adjusted image size */
+    width: 500px; /* Adjusted image size */
     height: auto;
     /* Maintain aspect ratio */
     max-width: 50%;
@@ -282,17 +309,39 @@
     /* Ensures text remains readable */
   }
   
+  /*Title of the projects */
   .project-info h3 {
     font-size: 1.8rem;
-    color: #222;
+    color: #201b1b;
     margin-bottom: 0.5rem;
+    text-align: justify;
     cursor: pointer; /*Added cursor */
   }
   
+  /*Desc of the projects */
   .project-info p {
     font-size: 1.2rem;
     color: #555;
+    text-align: justify;
     line-height: 1.5;
+    margin-right: 20px;
+  }
+
+  /* Style for the 'Visit Here' button */
+.visit-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #00802b;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .visit-btn:hover {
+    background-color: #043c16;
   }
   
   /* Contact Form */
