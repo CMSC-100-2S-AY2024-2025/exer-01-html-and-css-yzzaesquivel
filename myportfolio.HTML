@@ -1,23 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./style.css"/>
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./styles.css"/>
 </head>
+
 <body>
   <!-- Navigation -->
   <nav>
-    <div class="name">Yzza Esquivel</div>
+    <div class="name">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <span>Yzza Esquivel</span>
+    </div>
     <div class="links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
-	  <a href="#skills">Projects</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-content">
+      <img src="images/yzzapicture.png" alt="Profile picture" class="profile-pic">
+      <div class="about-text">
+        <h1>Welcome to My Portfolio!</h1>
+        <div class="welcome-buttons">
+          <a href="#projects" class="welcome-btn">Projects</a>
+          <a href="#contact" class="welcome-btn">Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- About Me Section -->
+  <section id="skills">
+    <h2>About Me</h2>
+    <div class="about-me-container">
+      <div class="get-to-know">
+		<h3>Get to know me!</h3>
+		<p>
+			I am a passionate <strong class="bold-hover">Frontend Web Developer</strong> and <strong class="bold-hover">Computer Science student at UPLB</strong>. I handle the front-end of websites and web apps, making sure they play a key role in the success of the product. 
+			You can explore my work in the <a href="#projects" class="bold-hover">Projects</a> section.
+			I also like sharing the knowledge I have gained in Web Development to help others within the community. The ability to create applications and solve problems with code has always intrigued me, and this fascination continues to drive my growth as a programmer.
+		</p>
+		<br>
+		<p>
+			I am currently looking for job opportunities where I can bring my skills, contribute, and continue learning. If you have a suitable opportunity, <a href="#contact" class="bold-hover">feel free to reach out!</a>
+		</p>
+      </div>
+      <div class="skills-section">
+        <h3>My Skills</h3>
+        <div class="skills-container">
+			<button class="skill-box">
+			  <img src="images/html.png" alt="HTML" class="skill-logo">
+			  <h3>HTML</h3>
+			</button>
+			<button class="skill-box">
+			  <img src="images/css.png" alt="CSS" class="skill-logo">
+			  <h3>CSS</h3>
+			</button>
+			<button class="skill-box">
+			  <img src="images/js.png" alt="JavaScript" class="skill-logo">
+			  <h3>JavaScript</h3>
+			</button>
+			<button class="skill-box">
+			  <img src="images/git.png" alt="Git" class="skill-logo">
+			  <h3>GIT</h3>
+			</button>
+			<button class="skill-box">
+			  <img src="images/github.png" alt="Github" class="skill-logo">
+			  <h3>Github</h3>
+			</button>
+			<button class="skill-box">
+			  <img src="images/c.png" alt="C" class="skill-logo">
+			  <h3>C</h3>
+			</button>
+		  </div>
+		  
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-box">
+        <img src="images/project1.png" alt="Project 1" class="project-image">
+        <div class="project-info">
+          <h3>Plants and Pests</h3>
+          <p>Description of project 1</p>
+        </div>
+      </div>
+      <div class="project-box">
+        <img src="images/project2.png" alt="Project 2" class="project-image">
+        <div class="project-info">
+          <h3>Project 2</h3>
+          <p>Description of project 2</p>
+        </div>
+      </div>
+      <div class="project-box">
+        <img src="images/project3.png" alt="Project 3" class="project-image">
+        <div class="project-info">
+          <h3>Project 3</h3>
+          <p>Description of project 3</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-form">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-box">
+          <img src="facebook-logo.png" alt="Facebook" class="social-logo">
+          <span>Facebook</span>
+        </a>
+        <a href="#" class="social-box">
+          <img src="github-logo.png" alt="Github" class="social-logo">
+          <span>Github</span>
+        </a>
+        <a href="#" class="social-box">
+          <img src="linkedin-logo.png" alt="LinkedIn" class="social-logo">
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Jane Smith - My First Portfolio</p>
+  </footer>
 </body>
+
 </html>
