@@ -4,6 +4,12 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  /* Website Background */
+  body {
+    background: url('images/web-bgbg.jfif') no-repeat center center fixed;
+    background-size: cover;
+  }
   
   .profile-pic {
     width: 250px;  /* Adjusted size */
