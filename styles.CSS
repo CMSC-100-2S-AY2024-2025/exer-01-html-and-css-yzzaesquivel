@@ -1,4 +1,4 @@
-/* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,22 +9,16 @@
   body {
     background: url('images/background/web-background.jfif') no-repeat center center fixed;
     background-size: cover;
-  }
-  
-  .profile-pic {
-    width: 250px;  /* Adjusted size */
-    height: 250px; /* Adjusted size */
-}
-
-  body {
     font-family: 'Open Sans', sans-serif; /* Added a more modern font */
     line-height: 1.6;
     background-color: #f4f4f4; /* Lighter background */
     color: #333; /* Darker text */
   }
   
-  
-  /* Navigation -> Yzza Esquivel*/
+  /* 
+  NAVIGATION BAR
+   */
+  /* Navigation -> Yzza Esquivel */
   nav {
     background-color: #2c3e50; /* Darker blue */
     color: white;
@@ -35,7 +29,7 @@
   }
   
   .name {
-    font-size: 1.8rem; /* Increased size */
+    font-size: 1.8rem; 
     font-family: 'Roboto', sans-serif; /* Different font for name */
     font-weight: bold;
     display: flex;
@@ -52,8 +46,8 @@
     color: white;
     text-decoration: none;
     margin-left: 1rem;
-    font-size: 1.2rem; /* Increased size */
-    font-weight: 600; /* Slightly bolder */
+    font-size: 1.2rem;
+    font-weight: 600;
     transition: color 0.3s; /* Smooth color transition */
   }
   
@@ -79,29 +73,30 @@
  }
 
   
-  h1, h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    text-size-adjust: 500px;
-    color: white; /* Darker blue */
-    font-family: 'Roboto', sans-serif; /* Different font for headers */
-  }
+  /* 
+  INTRO SECTION
+   */
   
   /* Make 'Welcome to My Portfolio' Bigger */
   h1 {
-    font-size: 3.5rem; /* Increased size */
+    font-size: 3.5rem;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
   }
   
   h2 {
-    font-size: 2.5rem; /* Increased size */
+    text-align: center;
+    font-size: 2.5rem; 
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 2rem;
     color: #2c3e50;
   }
   
+  /* Underline hover effect */
+  /* Reference: https://www.youtube.com/watch?v=gGySLNda00s */
   h2::after {
     content: '';
     position: absolute;
@@ -133,32 +128,107 @@
     margin-top: -20px;
 }
   
+
+  /* Profile Picture */
   .profile-pic {
     border-radius: 50%;
     width: 500px; /* Increased size */
     height: 500px; /* Increased size */
+		align-items: left;
   }
-  
+
+  /* Buttons below the Welcome-intro */
   .welcome-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 2rem;
+		width: 500px; /* Increased size */
+    height: 50px; /* Increased size */
+		margin-left: -2px;
   }
   
-  .welcome-btn {
-    padding: 0.8rem 2rem;
-    background-color: #3498db; /* Blue button */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    font-size: 1.1rem; /* Increased size */
+	.welcome-btn {
+		padding: 1rem 2.5rem;
+		background: linear-gradient(135deg, #3498db, #2c3e50); /* Gradient effect */
+		color: white;
+		text-decoration: none;
+		border-radius: 8px;
+		transition: all 0.3s ease-in-out;
+		font-size: 0.9rem;
+		font-weight: bold;
+		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+		border: none;
+		cursor: pointer;
+	}
+
+	.welcome-btn:hover {
+		background: linear-gradient(135deg, #2c3e50, #3498db);
+		transform: scale(1.05); /* Subtle zoom effect */
+		box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+	}
+
+  
+  /* 
+  ABOUT ME SECTION
+   */
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
   }
   
-  .welcome-btn:hover {
-    background-color: #2980b9; /* Darker blue on hover */
+  /* Style for "Get to Know Me" */
+  .get-to-know {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+  .get-to-know h3 {
+    font-size: 2.2rem; /* Increased size */
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  
+  .get-to-know p {
+    font-size: 1.3rem; /* Increased size */
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* 
+  SKILLS SECTION
+   */
+  
+  .skills-section {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills-section h3 {
+    font-size: 2.2rem; /* Increased size */
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Add Description */
+  .skills-section p {
+    font-size: 1.3rem; /* Increased size */
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .skills-section p strong { /* For highlighted texts */
+    color: #222;
+  }
+
   /* --- Skill Box Styling --- */
   .skills-container {
     display: flex;
@@ -167,7 +237,7 @@
     gap: 1rem;
   }
   
-  /* Make Skill Names into Buttons */
+  /* Make Skill Names into Boxes */
   .skill-box {
     background-color: #022c48; /* Blue background */
     color: white;
@@ -191,75 +261,63 @@
   }
   
   .skill-box h3 {
-    font-size: 1.4rem; /* Increased size */
+    font-size: 1.4rem; /* Increase size */
     text-align: center;
   }
   
-  .skill-logo {
+  .skill-logo { /* For logos size */
     width: 50px;
     height: 50px;
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
   
   
-  /* About Me Section */
-  .about-me-container {
+  /* --- Skill Box Styling --- */
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  /* Make Skill Names into Boxes */
+  .skill-box {
+    background-color: #022c48; /* Blue background */
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 200px;
+    height: 120px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    text-align: center; /* Center text */
   }
   
-  
-  /* Style for "Get to Know Me" */
-  .get-to-know {
-    background-color: #f8f8f8;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: justify;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  .skill-box:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05);
   }
   
-  .get-to-know h3 {
-    font-size: 2.2rem; /* Increased size */
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 1rem;
+  .skill-box h3 {
+    font-size: 1.4rem; /* Increase size */
+    text-align: center;
   }
   
-  .get-to-know p {
-    font-size: 1.3rem; /* Increased size */
-    color: #555;
-    line-height: 1.6;
+  .skill-logo { /* For logos size */
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
   }
-  
-  .skills-section {
-    background-color: #f8f8f8;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: justify;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .skills-section h3 {
-    font-size: 2.2rem; /* Increased size */
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  /* Add Description */
-  .skills-section p {
-    font-size: 1.3rem; /* Increased size */
-    color: #555;
-    margin-bottom: 1.5rem;
-  }
-  
-  .skills-section p strong {
-    color: #222;
-  }
+
   
   /* Adjust button size for tech stack buttons */
-.tech-btn {
+  .tech-btn {
     font-size: 0.9rem; /* Make text smaller */
     padding: 6px 12px; /* Reduce padding */
   }
@@ -268,25 +326,29 @@
     font-size: 0.8rem; /* Smaller than other buttons */
     margin-top: 5px;
   }
+
+    /* 
+  PROJECTS SECTION
+   */
   
   /* Dark blue background for Projects section */
   #projects {
     background-color: #022c48;
     color: rgb(255, 255, 255);
   }
+
   /* To make Project title white */
   #projects h2 {
     color: white;
   }
   
-  /* Arrange Projects in Rows */
+  /* Arrange Projects in Columns */
   .projects-container {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     padding: 1rem;
     align-items: center;
-    /* Centers the project boxes */
   }
   
   .project-box {
@@ -300,7 +362,6 @@
     transition: transform 0.3s;
     width: 100%;
     max-width: 1000px;
-    /* Increase width to fit bigger images */
   }
   
   .project-box:hover {
@@ -360,6 +421,9 @@
     background-color: #043c16;
   }
   
+  /* 
+  CONTACT ME SECTION
+   */
   /* Contact Form */
   form {
     display: flex;
@@ -383,27 +447,25 @@
     resize: vertical;
   }
   
+	/* Send a Message button */
   button {
-    background-color: #3498db; /* Blue button */
+    background: linear-gradient(45deg, #3498db, #2980b9); /* Gradient effect */
     color: white;
-    padding: 0.5rem;
+    padding: 0.8rem 1.5rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 1.1rem; /* Increased size */
-  }
-  
-  button:hover {
-    background-color: #2980b9; /* Python, RStudio Darker blue on hover */
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #2c3e50; /* Darker blue */
-    color: white;
-  }
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #2980b9, #113a56); /* Darker blue on hover */
+    transform: scale(1); /* Slightly enlarges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth */
+}
+
   
   .bold-hover {
     font-weight: bold;
@@ -440,7 +502,7 @@
     }
   }
   
-  /* Contact Section */
+  /* Contact Container */
   .contact-container {
     max-width: 800px;
     margin: 0 auto;
@@ -475,18 +537,59 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.8rem 1.5rem;
-    background-color: white;
-    border-radius: 5px;
+    background: linear-gradient(45deg, #333, #555); /* Dark gradient */
+    border-radius: 6px;
     text-decoration: none;
-    color: #333;
-    transition: transform 0.3s;
-  }
-  
-  .social-box:hover {
-    transform: translateY(-3px);
-  }
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-box:hover {
+    background: linear-gradient(45deg, #0073e6, #005bb5); /* Blue gradient hover */
+    transform: translateY(-3px) scale(1.05); /* Slight bounce effect */
+    box-shadow: 0 4px 10px rgba(0, 115, 230, 0.4); /* Adds a glow effect */
+}
+
   
   .social-logo {
     width: 24px;
     height: 24px;
   }
+
+    /* Footer */
+    footer {
+        background-color: #333; /* Dark footer background */
+        color: white;
+        text-align: left;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .footer-content {
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-logo {
+        width: 100px; /* Adjust logo size */
+        height: auto;
+        margin-right: 15px;
+    }
+    
+    .footer-text {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .back-to-top {
+        color: #ffcc00; /* Highlight the link */
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    
+    .back-to-top:hover {
+        text-decoration: underline;
+    }

@@ -13,8 +13,8 @@ Live Website link:
 6. Wait for it to deploy. Then you can have your GitHub page link for your website.
 
 
--------- Key Takeaways
-Always keep your code organized and clean for better readability and easier editing of your website (something I'm still working out on). I had fun making this exercise since it's been a long time since I worked with HTML and CSS. 
+-------- Key Takeaways:
+- Always keep your code organized and clean for better readability and easier editing of your website (something I'm still working out on). I had fun making this exercise since it's been a long time since I worked with HTML and CSS. 
 
 
 
