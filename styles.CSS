@@ -1,3 +1,5 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -9,7 +11,7 @@
   body {
     background: url('images/background/web-background.jfif') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Open Sans', sans-serif; /* Added a more modern font */
+    font-family: 'Open Sans', sans-serif; 
     line-height: 1.6;
     background-color: #f4f4f4; /* Lighter background */
     color: #333; /* Darker text */
@@ -18,6 +20,7 @@
   /* 
   NAVIGATION BAR
    */
+
   /* Navigation -> Yzza Esquivel */
   nav {
     background-color: #2c3e50; /* Darker blue */
@@ -53,8 +56,10 @@
   
   .links a:hover {
     color: #ffcc00; /* Orange hover color */
-    text-decoration: none; /* No underline on hover */
+    text-decoration: underline; /* Add underline */
   }
+
+	
   
   /* Sections */
   section {
@@ -150,8 +155,8 @@
     display: flex;
     justify-content: left;
     gap: 2rem;
-		width: 500px; /* Increased size */
-    height: 50px; /* Increased size */
+		width: 500px;
+    height: 50px; 
 		margin-left: -2px;
   }
   
@@ -196,14 +201,15 @@
   }
   
   .get-to-know h3 {
-    font-size: 2.2rem; /* Increased size */
+    font-size: 2.2rem;
     font-weight: bold;
     color: #222;
     margin-bottom: 1rem;
+		font-family: 'Lora', serif;
   }
   
   .get-to-know p {
-    font-size: 1.3rem; /* Increased size */
+    font-size: 1.3rem;
     color: #555;
     line-height: 1.6;
   }
@@ -224,6 +230,7 @@
     font-size: 2.2rem; /* Increased size */
     font-weight: bold;
     margin-bottom: 1rem;
+		font-family: 'Lora', serif;
   }
   
   /* Add Description */
@@ -326,12 +333,12 @@
   
   /* Adjust button size for tech stack buttons */
   .tech-btn {
-    font-size: 0.9rem; /* Make text smaller */
-    padding: 6px 12px; /* Reduce padding */
+    font-size: 0.9rem;
+    padding: 6px 12px; 
   }
   
   .small-btn {
-    font-size: 0.8rem; /* Smaller than other buttons */
+    font-size: 0.8rem;
     margin-top: 5px;
   }
 
@@ -387,6 +394,7 @@
   .project-info {
     flex: 1; /* Using flexbox */
     min-width: 300px;
+		font-family: 'Poppins', serif;
   }
   
   /*Title of the projects */
@@ -396,7 +404,7 @@
     margin-bottom: 0.5rem;
     margin-right: 20px;
     text-align: justify;
-    cursor: pointer; /*Added cursor */
+    cursor: pointer; /*Add cursor effect */
   }
   
   /*Desc of the projects */
@@ -446,7 +454,7 @@
   
   /* Ensure 'Message' Box Can Only Be Resized Vertically */
   textarea {
-    max-height: 150px;
+    max-height: 200px;
     overflow-y: auto;
     resize: vertical;
   }
@@ -474,10 +482,10 @@ button:hover {
   .bold-hover {
     font-weight: bold;
     cursor: pointer;
-    font-size: 1.2rem; /* Increased size */
+    font-size: 1.2rem; 
   }
   
-  .bold-hover:hover {
+  .bold-hover:hover { /* Underline effect */
     text-decoration: underline;
   }
   
@@ -569,6 +577,7 @@ button:hover {
         padding: 1rem 2rem;
         display: flex;
         justify-content: left;
+				font-family: 'Futura', sans-serif;
     }
     
     .footer-content {
