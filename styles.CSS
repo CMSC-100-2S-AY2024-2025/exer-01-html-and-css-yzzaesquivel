@@ -52,7 +52,7 @@
   }
   
   .links a:hover {
-    color: #d35400; /* Orange hover color */
+    color: #ffcc00; /* Orange hover color */
     text-decoration: none; /* No underline on hover */
   }
   
@@ -65,12 +65,20 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Added subtle shadow */
   }
 
-  #intro {
+	#intro {
     background-color: rgba(255, 255, 255, 0);
     box-shadow: none;
     color: white;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5); /* Adds slight shadow for readability */
- }
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+    transition: color 0.1s ease-in, transform 0.2s ease-in-out;
+}
+
+	#intro:hover {
+    color: #ffcc00; /* Change text color to yellow */
+		transform: scale(1.02); /* Slightly go bigger */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* AFOr depth */
+	}
+
 
   
   /* 
@@ -126,7 +134,7 @@
     flex-direction: column;
     align-items: flex-start; /* Aligns text and buttons to the left */
     margin-top: -20px;
-}
+	}
   
 
   /* Profile Picture */
@@ -461,9 +469,9 @@
 }
 
 button:hover {
-    background: linear-gradient(45deg, #2980b9, #113a56); /* Darker blue on hover */
-    transform: scale(1); /* Slightly enlarges */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth */
+    background: linear-gradient(45deg, #2980b9, #113a56); 
+    transform: scale(1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
   
