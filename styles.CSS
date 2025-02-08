@@ -71,7 +71,7 @@
     color: white;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
     transition: color 0.1s ease-in, transform 0.2s ease-in-out;
-}
+	}
 
 	#intro:hover {
     color: #ffcc00; /* Change text color to yellow */
@@ -228,7 +228,7 @@
   
   /* Add Description */
   .skills-section p {
-    font-size: 1.3rem; /* Increased size */
+    font-size: 1.3rem;
     color: #555;
     margin-bottom: 1.5rem;
   }
@@ -379,18 +379,14 @@
   .project-image {
     width: 500px; /* Adjusted image size */
     height: auto;
-    /* Maintain aspect ratio */
     max-width: 50%;
-    /* Prevents overflow */
-    object-fit: cover;
+    object-fit: cover; /* Prevents overflow */
     border-radius: 8px;
   }
   
   .project-info {
-    flex: 1;
-    /* Allows text to take up remaining space */
+    flex: 1; /* Using flexbox */
     min-width: 300px;
-    /* Ensures text remains readable */
   }
   
   /*Title of the projects */
