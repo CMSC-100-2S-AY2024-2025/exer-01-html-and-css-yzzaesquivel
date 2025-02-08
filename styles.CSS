@@ -7,7 +7,7 @@
 
   /* Website Background */
   body {
-    background: url('images/web-bgbg.jfif') no-repeat center center fixed;
+    background: url('images/background/web-background.jfif') no-repeat center center fixed;
     background-size: cover;
   }
   
@@ -82,6 +82,7 @@
   h1, h2 {
     text-align: center;
     margin-bottom: 1rem;
+    text-size-adjust: 500px;
     color: white; /* Darker blue */
     font-family: 'Roboto', sans-serif; /* Different font for headers */
   }
@@ -273,7 +274,7 @@
     background-color: #022c48;
     color: rgb(255, 255, 255);
   }
-  /* To make Project tile white */
+  /* To make Project title white */
   #projects h2 {
     color: white;
   }
@@ -328,6 +329,7 @@
     font-size: 1.8rem;
     color: #201b1b;
     margin-bottom: 0.5rem;
+    margin-right: 20px;
     text-align: justify;
     cursor: pointer; /*Added cursor */
   }
