@@ -1,8 +1,8 @@
 Exercise 2: HTML and CSS
 
-Name: Yzza Esquivel
-Degree Program: BS Computer Science
-Live Website link:
+* Name: Yzza Esquivel
+* Degree Program: BS Computer Science
+* Live Website link:
 
 -------- Steps on how to create a GitHub page
 1. Create a new repository.
