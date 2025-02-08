@@ -1,4 +1,4 @@
-Exercise 2: HTML and CSS
+Exercise 1: HTML and CSS
 
 * Name: Yzza Esquivel
 * Degree Program: BS Computer Science
