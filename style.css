@@ -384,7 +384,6 @@ h2:hover::after {
     transform: scale(1.02); /* Slightly enlarge the box */
     opacity: 0.95;
 }
-
   
   .project-image {
     width: 500px; /* Adjusted image size */
